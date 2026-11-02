@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cobertura Retrátil e Cobertura Fixa no RJ | Teto Flex desde 1975</title>
 <meta name="description" content="Cobertura retrátil (abre no sol, fecha na chuva) e cobertura fixa para área gourmet, varanda, garagem, piscina, bares e restaurantes no estado do Rio de Janeiro. Desde 1975, com visita técnica, medição e equipe própria. Orçamento pelo WhatsApp (21) 98515-2627.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B8SKQ9HHPZ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-B8SKQ9HHPZ');</script>
 <link rel="canonical" href="https://tetoflex.com.br/">
 <meta name="theme-color" content="#0c0c0e">
 <link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
@@ -498,7 +500,7 @@ footer a:hover{color:#fff}
     var msg = a.getAttribute('data-wa') + (src ? ' (origem: ' + src + ')' : '');
     a.href = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(msg);
     a.target = '_blank'; a.rel = 'noopener';
-    a.addEventListener('click', function(){ try { if (window.fbq) fbq('track','Contact'); if (window.gtag) gtag('event','whatsapp_click'); } catch(e){} });
+    a.addEventListener('click', function(){ try { if (window.fbq) fbq('track','Contact'); if (window.gtag) gtag('event','clique_whatsapp', {botao: (a.innerText||a.getAttribute('aria-label')||'').trim().slice(0,60), origem: src || 'direto'}); } catch(e){} });
   });
   var h = document.querySelector('header');
   var onS = function(){ h.classList.toggle('solid', window.scrollY > 40); };
